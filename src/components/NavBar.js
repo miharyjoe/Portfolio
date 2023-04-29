@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
+import TwitterIcon from "./icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -30,7 +31,7 @@ const NavBar = () => {
 
       <nav>
         <Link href="/" target="_blank">
-          T
+          <TwitterIcon />
         </Link>
         <Link href="/" target="_blank">
           T
