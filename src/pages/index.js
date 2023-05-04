@@ -47,7 +47,9 @@ export default function Home() {
                 >
                   Resume <LinkArrow className="ml-1 w-full" />
                 </Link>
-                <Link href="mailto:miharyjoel@gmail.com" target={"_blank"}>
+                <Link href="mailto:miharyjoel@gmail.com" target={"_blank"}
+                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                >
                   Contact
                 </Link>
               </div>
