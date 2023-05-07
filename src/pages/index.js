@@ -6,6 +6,7 @@ import profilePics from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icons";
+import Hireme from "@/components/Hireme";
 
 export default function Home() {
   return (
@@ -47,8 +48,10 @@ export default function Home() {
                 >
                   Resume <LinkArrow className="ml-1 w-full" />
                 </Link>
-                <Link href="mailto:miharyjoel@gmail.com" target={"_blank"}
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                <Link
+                  href="mailto:miharyjoel@gmail.com"
+                  target={"_blank"}
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
                 >
                   Contact
                 </Link>
@@ -56,6 +59,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <Hireme />
       </main>
     </>
   );
