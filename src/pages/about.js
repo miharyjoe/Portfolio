@@ -13,6 +13,7 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout>
           <AnimatedText text="It lovers" />
+          <AnimatedText text="Hello" />
         </Layout>
       </main>
     </>
