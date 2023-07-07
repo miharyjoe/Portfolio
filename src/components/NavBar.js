@@ -38,16 +38,7 @@ const NavBar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://twitter.com"
-          target="_blank"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
-        >
-          <TwitterIcon />
-        </motion.a>
-        <motion.a
-          href="https://github.com"
+          href="https://github.com/miharyjoe"
           target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -56,31 +47,13 @@ const NavBar = () => {
           <GithubIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://www.linkedin.com/in/mihary-jo%C3%ABl-andriamilanto-374609233/"
           target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
           <LinkedInIcon />
-        </motion.a>
-        <motion.a
-          href="/"
-          target="_blank"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          href="/"
-          target="_blank"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3"
-        >
-          <DribbbleIcon />
         </motion.a>
         <div className="absolute left-[50%] top-2">
           <Logo />

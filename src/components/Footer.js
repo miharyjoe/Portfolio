@@ -11,11 +11,11 @@ const Footer = () => {
           Build with <span className="text-primary text-2xl px-1">&#9825;</span>{" "}
           by&nbsp;
           <Link
-            href="https://devdreaming.com"
+            href="https://www.linkedin.com/in/mihary-jo%C3%ABl-andriamilanto-374609233/"
             className="underline underline-offset-2"
             target="_blank"
           >
-            CodeBucks
+            Mihary Joël
           </Link>
         </div>
         <Link href="/" className="underline underline-offset-2">
