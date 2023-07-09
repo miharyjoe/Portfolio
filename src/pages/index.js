@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
 import Image from "next/image";
-import profilePics from "../../public/images/profile/developer-pic-1.png";
+import profilePics from "../../public/images/profile/developer-pic-3.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icons";
