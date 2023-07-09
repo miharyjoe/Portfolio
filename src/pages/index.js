@@ -28,14 +28,14 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
+                text="You stop to LEAD when you stop to LEARN."
                 className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                En pleine reconversion professionnelle, Je suis actuellement
+                étudiant en informatique après avoir fini mes études en sciences
+                et ingénierie des matériaux à l'ESPA Vontovorona. Comme vous le
+                constatez, j'aime apprendre et je n'ai pas peur des challenges.
               </p>
               <div className="flex items-center mt-2 self-start">
                 <Link
