@@ -1,9 +1,15 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import React from "react";
+import React, { useRef } from "react";
 import profilpic from "../../public/images/profile/developer-pic-3.png";
 import Image from "next/image";
+
+const AnimatedNumbers = ({ vqlue }) => {
+  const ref = useRef(null);
+
+  return <span ref={ref}></span>;
+};
 
 const about = () => {
   return (
@@ -14,7 +20,7 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="It lovers" />
+          <AnimatedText text="It lovers" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
@@ -27,19 +33,33 @@ const about = () => {
                 constatez, j'aime apprendre et je n'ai pas peur des challenges.
               </p>
             </div>
-
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 right-3 -z-10 w-{102%} h-{103%} rounded-{2rem} bg-dark " />
+              <div className="absolute top-0 -right-3 -z-10 w-{102%} h-{103%} rounded-{2rem} bg-dark " />
               <Image
                 src={profilpic}
                 alt="Mihary pic"
                 className="w-full h-auto rounded-2xl"
               />
             </div>
-            <div>
-              <div>
-                <span>50+</span>
+            <div className="col-span-2 flex flex-col item-end justify-between">
+              {/* <div className="flex flex-col item-end justify-center">
+                <span className="inline-block text-7-xl font-bold"> 50+</span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Satisfied client
+                </h2>
+              </div> */}
+              <div className="flex flex-col item-end justify-center">
+                <span className="inline-block text-7-xl font-bold">5</span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Projets completed
+                </h2>
               </div>
+              {/* <div className="flex flex-col item-end justify-center">
+                <span className="inline-block text-7-xl font-bold">50+</span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Satisfied client
+                </h2>
+              </div> */}
             </div>
           </div>
         </Layout>
