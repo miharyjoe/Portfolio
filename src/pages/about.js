@@ -1,12 +1,30 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import profilpic from "../../public/images/profile/developer-pic-3.png";
 import Image from "next/image";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
 
-const AnimatedNumbers = ({ vqlue }) => {
+const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [useEffect, value]);
 
   return <span ref={ref}></span>;
 };
@@ -49,9 +67,11 @@ const about = () => {
                 </h2>
               </div> */}
               <div className="flex flex-col item-end justify-center">
-                <span className="inline-block text-7-xl font-bold">5</span>
+                <span className="inline-block text-7-xl font-bold">
+                  <AnimatedNumbers value={26} />
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  Projets completed
+                  Age
                 </h2>
               </div>
               {/* <div className="flex flex-col item-end justify-center">
