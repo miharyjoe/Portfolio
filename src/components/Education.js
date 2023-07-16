@@ -44,13 +44,31 @@ const Education = () => {
             type="2e année en licence informatique"
             time="2022-2023"
             place="Haute Ecole Informatique(HEI)"
-            info=" Gestion d'équipe sur Jira en tant que PO
+            info="Gestion d'équipe sur Jira en tant que PO
             Cloud computing : Amazon Web Services (AWS)
             Cours développement web : création site web , design
             Gestion de projet
             Cours API Rest : springboot, swagger, openAPI
             Cours Base de donnée: postgreSQL
             Test unitaire: Jest, Mocha Js, Junit"
+          />
+          <Details
+            type="Développement Mobile et Application"
+            time="21 Mars 2022 à 25 Mars 2022"
+            place="Orange Digital Center"
+            info="Développement mobile native en java, Intro à la design : comment faire de l'UX/UI"
+          />
+          <Details
+            type="Coaching et suivi en sens relationnel"
+            time="18 Avril 2023 à 15 Juin 2023"
+            place="STH Consulting"
+            info="Coaching et suivi en sens relationnel dans le milieu professionnel, gestion de stress face aux pressions "
+          />{" "}
+          <Details
+            type="Master en Science et Ingénierie des Matériaux"
+            time="18 Avril 2023 à 15 Juin 2023"
+            place="Ecole Supérieure Polytechnique d'Antananarivo"
+            info=""
           />
         </ul>
       </div>
